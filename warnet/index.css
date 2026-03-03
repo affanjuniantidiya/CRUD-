@@ -1,0 +1,150 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1b1b2f;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+/* ===== JUDUL ===== */
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #e0c3fc;
+}
+
+/* ===== BUTTONS CENTER ===== */
+.top-actions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn,
+.btn-gray {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+/* Tombol Violet */
+.btn {
+    background: #9b59b6;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #8e44ad;
+    box-shadow: 0 8px 25px rgba(155, 89, 182, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Tombol Gray */
+.btn-gray {
+    background: #555;
+    color: #fff;
+}
+
+.btn-gray:hover {
+    background: #777;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+}
+
+/* ===== GRID TRANSAKSI ===== */
+.transaction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== CARD STYLE ===== */
+.transaction-card {
+    background: #2c2c3e;
+    border-radius: 16px;
+    padding: 20px 25px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transaction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* ROW INFO */
+.transaction-card .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.transaction-card .row span {
+    font-weight: 600;
+}
+
+/* PC Badge */
+.transaction-card .pc-badge {
+    background: #9b59b6;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* TOTAL */
+.transaction-card .total {
+    font-size: 16px;
+    font-weight: 700;
+    color: #e0c3fc;
+    margin-top: 10px;
+}
+
+/* ACTION LINKS */
+.transaction-card .actions {
+    margin-top: 15px;
+}
+
+.transaction-card .actions a {
+    color: #9b59b6;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.transaction-card .actions a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .transaction-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .transaction-grid {
+        grid-template-columns: 1fr;
+    }
+}
